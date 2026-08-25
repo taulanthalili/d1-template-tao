@@ -1,7 +1,7 @@
 {
 	"compatibility_date": "2025-10-08",
 	"main": "src/index.ts",
-	"name": "d1-template-tao",
+	"name": "uptime-monitor",
 	"upload_source_maps": true,
 	"d1_databases": [
 		{
@@ -10,6 +10,9 @@
 			"database_name": "d1-template-database"
 		}
 	],
+	"triggers": {
+		"crons": ["*/5 * * * *"]
+	},
 	"observability": {
 		"enabled": true
 	}
